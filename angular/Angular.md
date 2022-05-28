@@ -35,6 +35,18 @@
     Los componentes son los bloques de construcción que componen una aplicación, en un componente se incluye una clase de TypeScript, plantilla HTML y estilos.
 
 ```bash
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'hello-world',
+  template: `
+    <h2>Hello World</h2>
+    <p>This is my first component!</p>
+  `
+})
+export class HelloWorldComponent {
+  // The code in this class drives the component's behavior.
+}
    
 ``` 
 ## Caracteristicas
