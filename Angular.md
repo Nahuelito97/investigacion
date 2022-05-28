@@ -1,12 +1,13 @@
 # Diseño y Aplicaciones en la web 2022
 
 
+
 ## Trabajo de investigación Temas:
 
-    - Angular.
-    - SIU Toba.
+<img src="./img/angular.svg" class="rounded-circle" alt="Cinque Terre" width="200"/> 
 
-    
+
+   
 
 ## Grupo
 
@@ -15,9 +16,27 @@
 
 
 ## Tema a investigar
-
     El tema propuesto para el trabajo de invesigación fue algún frameworck de javascript, el tema que vamos a investigar es Angular
 
+
+
+
+### Que es angular?
+    Es un marco de diseño de aplicaciones y una plataforma de desarrollo para crear aplciaciones eficientes y sofistificadas de una sola pagina.
+
+    Es una plataforma de desarrollo, como plataforma incluye:
+
+    - Un marco basado en componentes para crear aplicaciones webs escalabes.
+    - Coleccion de bibliotecas integradas que cubren una amplia variedad de funciones, como ser enrrutamiento, gestion de formularios, comunicación cliente-servidor.
+    - Herramientas de desarrollo para ayudar al desarrollo, compilación, pruebas y actualziaciones de código. 
+
+
+### Componentes
+    Los componentes son los bloques de construcción que componen una aplicación, en un componente se incluye una clase de TypeScript, plantilla HTML y estilos.
+
+```bash
+   
+``` 
 ## Caracteristicas
 
 caracteristica, ventajas, desventajas, instalacion, demo
