@@ -32,23 +32,48 @@
 
 
 ### Componentes
-    Los componentes son los bloques de construcción que componen una aplicación, en un componente se incluye una clase de TypeScript, plantilla HTML y estilos.
+Los componentes son los bloques de construcción que componen una aplicación, en un componente se incluye una clase de TypeScript '@Component()' con un decorador, plantilla HTML y estilos.
 
-```bash
+
+```html
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'hello-world',
-  template: `
-    <h2>Hello World</h2>
-    <p>This is my first component!</p>
-  `
-})
-export class HelloWorldComponent {
-  // The code in this class drives the component's behavior.
-}
-   
-``` 
+    @Component({
+    selector: 'hello-world',
+    template: `
+        <h2>Hello World</h2>
+        <p>This is my first component!</p>
+    `
+    })
+    export class HelloWorldComponent {
+    // The code in this class drives the component's behavior.
+    }
+```
+
+Para usar este componente, escribe lo siguiente en una plantilla:
+```html
+    <hello-world></hello-world>
+```
+
+Cuando Angular representa este componente, el DOM resultante se ve así:
+
+```html
+    <hello-world>
+        <h2>Hello World</h2>
+        <p>This is my first component!</p>
+    </hello-world>
+```
+El modelo de componentes de Angular ofrece una fuerte encapsulación y una estructura de aplicación intuitiva. Los componentes también hacen que su aplicación sea fácil de probar y pueden mejorar la legibilidad general de su código.
+
+
+### Plantillas
+
+Cada componente tiene una plantilla HTML que declara como se represeta ese componente, la plantilla se define cen la linea o por ruta de archivo.
+Angular actualiza automáticamente el DOM renderizado cuando cambia el estado de su componente.
+
+```html
+   <p>{{ message }}</p>
+```
 ## Caracteristicas
 
 caracteristica, ventajas, desventajas, instalacion, demo
