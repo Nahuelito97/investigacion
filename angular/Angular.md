@@ -94,11 +94,6 @@ Cuando la aplciacion carga el componente y la plantilla se vera lo siguiente:
 ```
 
 
-o Ventajas y desventajas
-o Comparación entre los otros frameworks
-o Pequeño desarrollo
-o Proyección a futuro
-
 ## Historia
 
 Angular se ha convertido en el framework mas popular para crear aplicaciones de una sola pagína(Single Page Aplciations) 
@@ -114,23 +109,98 @@ Angular forma parte del Stack *MEAN* el cual es una integración de:
 Los 4 manejasn JavaScript como lenguaje de desarrollo.
 
 ## Caracteristicas
+- **Document Object Model(DOM)**
 
-caracteristica, ventajas, desventajas, instalacion, demo
-comparacion con otros fm de js, cuando se creo, por que, con que objetivos.
+Trata de un objeto XML o HTML como una estructura de árbol en la que cada nodo representa una parte del docuemento.
+
+
+<img src="./img/dom.png" class="rounded-circle" alt="Cinque Terre" width="600"/> 
+
+Angular usa DOM regular, se relaizan 10 actualizaciones en la misma pagna html. En lugar de actualizar las que ya se actualizaron, angular actualzara toda la estructura de árbol de las etiquetas html.
+
+- **TypeScript**
+
+Define un conjunto de tipos de JavaScript, lo que aydua a los usuarios a escribir código JavaScript que es mas facil de entender, todo el codigo de typeScript se compila en javascript y se puede ejecutar sin problemas en cualquier plataforma, no es obligatorio para desarrollar una aplicacion en angular.
+
+- **Data Binding(Enlace de Datos)**
+
+Es un proceso que permite a los usuarios manipular elementos de la pagina web a traves de un navegador web. Emplea HTML dinámico y no requiere secuencias de comandos ni programación complejas.
+
+Angular usa el enlace bidireccional. EL estado del modelo refleja los cambios realziados en los elementos de la interfaz de usuario correspondientes.
+
+- **Testing (Pruebas)**
+
+Angular usa el Framework de prueba Jasmine. Jasmine proporciona múltiples funcionalidades para escribir diferentes tipos de casos de prueba. Karma es el ejecutor de tareas para las pruebas que usa un archivo de configuración para configurar la puesta en marcha, los reportes y el framework de prueba.
+
+<img src="./img/arg.png" class="rounded-circle" alt="Cinque Terre" width="600"/> 
+
+Angular es un marco modelo-vista-controlador (MVC) completo. 
+
+- **Módulos**
+
+Una aplicación Angular tiene un módulo raíz, llamado AppModule, que proporciona el mecanismo de arranque para iniciar la aplicación.
+
+- **Metadatos**
+- 
+Los metadatos le dicen a Angular cómo procesar una clase. Se utiliza para decorar la clase para que pueda configurar el comportamiento esperado de una clase.
+
+
+**Directivas Angular**
+
+Las directivas amplían el HTML proporcionándole una nueva sintaxis. 
+
+- La Directiva modelo ng
+  
+El modelo ng vincula el valor del control HTML con el valor de expresión
+
+<img src="./img/ng.png" class="rounded-circle" alt="Cinque Terre" width="600"/> 
+
+- La Directiva ng-bind
+  
+Esta directiva reemplaza el valor de control HTML con un valor de expresión
+
+<img src="./img/bind.png" class="rounded-circle" alt="Cinque Terre" width="600"/> 
+
+---
+# **Ventajas**
+
+## **Componentes personalizados** 
+
+Los usuarios tienen total libertad de construir sus propios componentes que pueden empaquetar la funcionalidad junto con la lógica de renderizado en piezas reutilizables en el código.
+
+## **Enlace de datos**
+
+Una de las grandes ventajas es que permite a los usuarios mover datos sin esfuerzo desde el código JavaScript a la vista y reaccionar a los eventos del usuario sin tener que escribir ningún código manualmente.
+
+## **Integral**
+
+Angular es un framework completo y proporciona soluciones listas para usar para la comunicación del servidor, el enrutamiento dentro de su aplicación y más.
+
+## **Compatibilidad del navegador**
+
+Angular es multiplataforma y compatible con muchos navegadores. Una aplicación angular normalmente se puede ejecutar en todos los navegadores (por ejemplo; Chrome, Firefox) y sistemas operativos, como Windows, macOS y Linux.
+
+## **Desventajas**
+
+**Curva de aprendizaje empinada**
+
+Los componentes básicos de Angular que todos los usuarios deben conocer incluyen directivas, módulos, decoradores, componentes, servicios, inyección de dependencias, pipes y plantillas. 
+
+**Migración**
+
+Una de las razones por las que las empresas no utilizan Angular con frecuencia es la dificultad de trasladar el código heredado basado en js / jquery a una arquitectura de estilo angular.
+
+**Complejo**
+
+Un problema común en la comunidad Angular es la forma en como debe escribirse el Framework. También es bastante complejo en comparación con otras herramientas de front-end.
+
+o Comparación entre los otros frameworks
+o Pequeño desarrollo
+o Proyección a futuro
 
     
 
-```bash
-   #Debemos de cambiar la conexón por defecto 
-   'default' => env('DB_CONNECTION', 'mysql'),
+## **Bibliografia**
+[Que es Angular](https://www.hiberus.com/crecemos-contigo/que-es-angular-y-para-que-sirve/)
 
-   #a
-
-   #Esta conexión para poder conectarlo a postgres.
-    'default'=>env('BD_CONNECTION','pgsql'),
-
-``` 
-  
-
-
-<span class="badge badge-warning text-uppercase">Nahuel Wagner</span>
+[Angular](https://angular.io/guide/what-is-angular)
